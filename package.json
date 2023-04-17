@@ -32,6 +32,11 @@
     "rollup-plugin-typescript2": "^0.34.1",
     "typescript": "^5.0.4"
   },
+  "lint-staged": {
+    "**/*": [
+      "eslint src --fix"
+    ]
+  },
   "peerDependencies": {
     "react": "^16.8.0",
     "react-dom": "^16.8.0"

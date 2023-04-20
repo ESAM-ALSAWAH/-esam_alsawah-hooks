@@ -2,4 +2,7 @@
 package.json
 /node_modules
 /dist
+/storybook-static
+/.storybook
+/src/stories
 README.MD

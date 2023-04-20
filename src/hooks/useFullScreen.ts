@@ -3,10 +3,10 @@ import { useState, useRef, useEffect } from 'react';
 export const useFullScreen = <T extends HTMLElement = HTMLImageElement>() => {
   const [fullScreen, SetFullScreen] = useState<boolean>(false);
   const ref = useRef<T>(null) as React.MutableRefObject<T | null>;
-
   const handleFullscreenChange = () => {
     SetFullScreen(!!document.fullscreenElement);
   };
+
   useEffect(() => {
     if (typeof window !== 'undefined' && typeof navigator !== 'undefined') {
       document.addEventListener('fullscreenchange', handleFullscreenChange);

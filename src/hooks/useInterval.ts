@@ -16,13 +16,11 @@ export const useInterval = (fn: () => void, time: number) => {
       return true;
     });
   };
-
   const stop = () => {
     setActive(false);
     window.clearInterval(intervalRef.current);
     intervalRef.current = undefined;
   };
-
   const toggle = () => {
     if (active) {
       stop();

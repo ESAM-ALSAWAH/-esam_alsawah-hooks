@@ -16,7 +16,6 @@ export const useHover = <T extends HTMLElement = HTMLDivElement>() => {
         ref.current?.removeEventListener('mouseleave', onMouseLeave);
       };
     }
-
     return undefined;
   }, []);
 

@@ -21,7 +21,6 @@ We welcome contributions to this library! To get started, please follow these st
 2. Make your changes and commit them to a new branch.
 3. Submit a pull request.
 
-
 We'll review your changes as soon as possible and provide feedback. Thank you for contributing!
 
 ## License

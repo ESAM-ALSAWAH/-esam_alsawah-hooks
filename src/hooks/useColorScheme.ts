@@ -1,7 +1,12 @@
+import { useState, useEffect } from 'react';
 export const useColorScheme = () => {
-  return typeof window !== 'undefined'
-    ? window.matchMedia('(prefers-color-scheme:dark)').matches
-      ? 'dark'
-      : 'light'
-    : null;
+  const [colorSchema, setColorSchema] = useState<'dark' | 'light' | null>(null);
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      if (window.matchMedia('(prefers-color-scheme:dark)').matches)
+        setColorSchema('dark');
+      else setColorSchema('light');
+    }
+  }, []);
+  return colorSchema;
 };

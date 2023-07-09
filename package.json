@@ -1,6 +1,6 @@
 {
   "name": "@esam_alsawah/hooks",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "author": {
     "name": "Esam Alsawah",
     "email": "esam.alsawah2000@gmail.com",
@@ -24,9 +24,7 @@
     "start": "rollup -c -w",
     "lint": "eslint src",
     "prettier": "prettier --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\"",
-    "prepare": "husky install",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "prepare": "husky install"
   },
   "license": "ISC",
   "devDependencies": {
@@ -46,7 +44,6 @@
     "babel-runtime": "^6.26.0",
     "eslint": "^8.38.0",
     "eslint-plugin-react": "^7.32.2",
-    "eslint-plugin-storybook": "^0.6.11",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.1",
     "prettier": "2.8.7",

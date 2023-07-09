@@ -24,7 +24,7 @@ yarn add @esam_alsawah/hooks
 
 
 - **Hooks**
-  - [`useBreakpoint`](./docs/useBreakpoint.md) &mdash;  returns the current breakpoint string based on the screen size, using an object of predefined breakpoints as options.
+  - [`useBreakpoint`](./docs/useBreakpoint.md) &mdash; allows you to easily get the current breakpoint of the screen based on its width.
   - [`useClipboard`](./docs/useClipboard.md) &mdash;  copies text to clipboard.
   - [`useColorScheme`](./docs/useColorScheme.md) &mdash; detects the color scheme of the user's system. 
   - [`useDebounce`](./docs/useDebounce.md) &mdash; debounces a function.
